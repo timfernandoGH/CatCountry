@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admiralareospeedwag.catcountry.MapActivity">
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="339dp"
+        android:layout_height="305dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/party"
+        app:layout_constraintRight_toRightOf="@+id/stepcountview"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toRightOf="@+id/stepcountview" />
+
+    <Button
+        android:id="@+id/challenge"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:text="Challenges"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/stepcountview"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stepcountview"
+        android:layout_marginRight="16dp"
+        app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/item"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="Items"
+        android:layout_marginEnd="24dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="24dp" />
+
+    <Button
+        android:id="@+id/party"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Party"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/item"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.534" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_marginStart="39dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="39dp" />
+
+    <TextView
+        android:id="@+id/stepcountview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=" Distance to Destination"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/challenge"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="17dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
