@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class challengeActivity extends AppCompatActivity  implements View.OnClickListener{
 
@@ -20,7 +22,7 @@ public class challengeActivity extends AppCompatActivity  implements View.OnClic
         final Button escape = (Button)findViewById(R.id.Escape);
         escape.setOnClickListener(this);
 
-        final Button attack = (Button)findViewById(R.id.dmgButton);
+        final ImageView attack = (ImageView) findViewById(R.id.dmgButton);
         attack.setOnClickListener(this);
 
     }
@@ -42,7 +44,8 @@ public class challengeActivity extends AppCompatActivity  implements View.OnClic
             case R.id.dmgButton:
                 tempCounter++;
                 String tempText = Integer.toString(this.tempCounter);
-                R.id.dmgButton.setText( tempText );
+                TextView dmgbutton = (TextView)findViewById(R.id.damageDisplay);
+                dmgbutton.setText(tempText);
                 break;
 
 
